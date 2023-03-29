@@ -1,0 +1,190 @@
+/* pedido */
+/* geral */
+
+
+/* ======================================================================================================================================================== */
+/* Meu pedido */
+main div#all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.7rem;
+}
+main div#all h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 140%;
+}
+main div#all div.pedidos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0rem;
+  width: 30.3rem;
+}
+main div#all div.pedidos div.pedido {
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
+  align-items: center;
+  width: 23.1rem;
+  height: 10.4rem;
+}
+main div#all div.pedidos div.pedido img {
+  width: 7.2rem;
+  height: 7.2rem;
+}
+main div#all div.pedidos div.pedido span.pri {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main div#all span.pri span.seg {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 160%;
+}
+main div#all span.pri span.seg h4.qtd {
+  display: none;
+}
+main div#all span.pri button.ter {
+  background: initial;
+  border: none;
+  outline: none;
+
+  width: initial;
+  height: initial;
+  margin: initial;
+  padding: initial;
+  justify-content: start;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 160%;
+
+  color: var(--tomato);
+}
+main div#all span.pri span.seg small {
+  display: block;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 160%;
+}
+main button {
+  margin-inline-start: auto;
+  margin-block: 2rem;
+}
+
+
+/*=======================================================================================================================================================================  */
+/* Desktop */
+@media (min-width: 994px) {
+  /* geral */
+  body {
+    overflow: auto;
+  }
+  .wrapper {
+    width: min(100rem, 100%);
+  }
+  .nav-link {
+    padding: 0;
+  }
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    height: 0.8rem;
+  }
+  /* NAV */
+  nav {
+    height: 10.4rem;
+    margin-bottom: 3.4rem;
+  }
+
+  nav div.container-fluid.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+  }
+  .navbar-collapse {
+    flex-grow: initial;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav form label {
+    height: 5rem;
+    margin-left: 13rem;
+    margin-right: 2rem;
+  }
+  nav form button.btn {
+    width: 0;
+    border: initial;
+    display: none;
+  }
+  nav button.pedidos:hover {
+    background: var(--blue2);
+    filter: brightness(1.3);
+  }
+  nav button.pedidos {
+    width: initial;
+    height: 4.7rem;
+    background: var(--blue2);
+    margin-right: 16rem;
+  }
+
+  nav button.pedidos h6 {
+    text-align: initial;
+    font-size: initial;
+    margin: 0;
+  }
+
+  nav button.logout {
+    width: initial;
+  }
+  nav button.logout h6 {
+    display: none;
+  }
+
+  nav button.cfg {
+    width: initial;
+  }
+  nav button.cfg h6 {
+    display: none;
+  }
+  /* main */
+  main div#all span.pri span.seg small {
+    display: initial;
+  }  
+  main div#all span.pri span.seg h4.qtd {
+    display: initial;
+  }
+  main div#all span.pri span.seg {
+    width: 23.612rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.012rem;
+  }
+  main div#all span.pri span.seg small{
+    font-size: 1.5rem;
+  }
+  /* footer */
+  footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+    gap: 0.8rem;
+  }
+  main div#all {
+    align-items: flex-start;
+    justify-content: start;
+  }
+}
+

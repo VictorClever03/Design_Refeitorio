@@ -1,0 +1,30 @@
+#nav-taps{
+    
+    margin-bottom: 50vh;
+}
+#nav-taps h1{
+    padding-bottom: 5rem;
+}
+#nav-taps .links .nav-link{
+   color: var(--grey);
+}
+.nav-tabs .nav-link{
+    border: none;
+}
+#nav-taps .links .nav-link:hover{
+    border: none;
+    outline: none;
+    border-radius: 0;
+   font-weight: bold;
+}
+#nav-taps .links .nav-link.active{
+    background: var(--dark300);
+    font-weight: bold;
+   color: var(--text);
+    border: none;
+    outline: none;
+}
+
+.card {
+    background: var(--dark300);
+}
