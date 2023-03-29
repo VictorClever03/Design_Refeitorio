@@ -106,7 +106,22 @@ function clearCart() {
   clear;
   document.querySelector(".cart").textContent = 0;
 }
+// =============================================================================
+// preloader
+// =============================================================================
+let preloader = document.querySelector("#preloader");;
+if (preloader) {
+  window.addEventListener("load", () => {
+    setTimeout(() => removePreloader(), 1000)
+  });
+}
+function removePreloader() {
+  preloader.remove();
+}
 
+// =============================================================================
+// Chamando as functions
+// =============================================================================
 includeButton();
 excluidButton()
 setDefault();

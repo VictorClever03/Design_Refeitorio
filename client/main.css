@@ -1,10 +1,72 @@
 /* geral */
+:root {
+  --def: 190;
+  --primary-color: hsla(190, 100%, 3%, 1);
+  --gra: linear-gradient(180deg, #091e26 0%, #00131c 100%);
+  --text: hsl(240, 9%, 89%);
+  --textS: hsl(240, 9%, 89%);
+  --dark300: hsl(198, 100%, 2%);
+  --darkshadow: hsl(200, 48%, 10%);
+  --border: hsl(210, 100%, 1%);
+  --blue1: hsl(186, 100%, 75%);
+  --blue2: hsl(195, 91%, 25%);
+  --blue3: hsl(201, 100%, 5%);
+  --grey: hsl(240, 6%, 51%);
+  --red1: hsl(353, 95%, 24%);
+  --tomato: hsl(355, 38%, 49%);
+  --scroll: hsl(353, 95%, 24%);
+
+  font-size: 62.5%; /*1rem igual 10px*/
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.2s;
 }
+/* ================================== */
+/*  preloader*/
+/* ================================== */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: var(--primary-color);
+}
+/*  */
+#preloader img{
+  position: fixed;
+  width: 20rem;
+  top: calc(50% - 7rem);
+  left: calc(50% - 7rem);
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(50%);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(50%);
+  }
+}
+
+
+
 ::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
@@ -35,25 +97,6 @@
   transition: opacity 0.2s;
 }
 
-:root {
-  --def: 190;
-  --primary-color: hsla(190, 100%, 3%, 1);
-  --gra: linear-gradient(180deg, #091e26 0%, #00131c 100%);
-  --text: hsl(240, 9%, 89%);
-  --textS: hsl(240, 9%, 89%);
-  --dark300: hsl(198, 100%, 2%);
-  --darkshadow: hsl(200, 48%, 10%);
-  --border: hsl(210, 100%, 1%);
-  --blue1: hsl(186, 100%, 75%);
-  --blue2: hsl(195, 91%, 25%);
-  --blue3: hsl(201, 100%, 5%);
-  --grey: hsl(240, 6%, 51%);
-  --red1: hsl(353, 95%, 24%);
-  --tomato: hsl(355, 38%, 49%);
-  --scroll: hsl(353, 95%, 24%);
-
-  font-size: 62.5%; /*1rem igual 10px*/
-}
 a {
   text-decoration: none;
   color: var(--text);
