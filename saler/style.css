@@ -72,10 +72,12 @@ table *{
 .bi-dash{
   font-size: 1.7rem;
   color: var(--text);
+  cursor: pointer;
 }
 .bi-plus{
   font-size: 1.7rem;
   color: var(--text);
+  cursor: pointer;
 }
 .operations{
   width: 2rem; color: var(--text); border: none; outline: none;
