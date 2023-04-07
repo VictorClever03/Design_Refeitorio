@@ -32,6 +32,7 @@
     --primary-color: #1c1d2b;
     --text: #dce0ea;
     --hover: #181926;
+    --new:#dc2430;
   
     font-size: 62.5%; /*1rem igual 10px*/
   }
@@ -65,6 +66,8 @@
     width: 10rem;
     padding: .7rem;
     font-size: 1.5rem;
+  color: white;
+
 }
 input.form-control{
   height: 3rem;
@@ -191,6 +194,47 @@ input.form-control{
     right: -40%;
     box-shadow: 3.7rem -3rem 0 1rem var(--hover);
   }
+  /* link actived */
+  .navigation ul li.actived {
+    background: var(--hover);
+  }
+  .navigation ul li.actived a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -100%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 3rem 3rem 0 1rem var(--hover);
+    background: transparent;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .navigation.active ul li.actived a::before {
+    top: -99%;
+    right: -40%;
+    box-shadow: 3rem 3rem 0 1rem var(--hover);
+  }
+  .navigation ul li.actived a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -100%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 3rem -3rem 0 1rem var(--hover);
+    background: transparent;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .navigation.active ul li.actived a::after {
+    bottom: -99%;
+    right: -40%;
+    box-shadow: 3.7rem -3rem 0 1rem var(--hover);
+  }
+  /* end lin actived */
   /* main */
   .main {
     position: absolute;
@@ -289,7 +333,7 @@ input.form-control{
 .btn-primary{
   background: #065E7C;
   border: none;
-  color: var(--text);
+  color: white;
 }
 .btn-primary:hover{
   background: #065E7C;

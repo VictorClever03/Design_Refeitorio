@@ -144,6 +144,46 @@ input.form-control{
     white-space: nowrap;
   }
   /* curvas fora no hover */
+  .navigation ul li.actived {
+    background: var(--hover);
+  }
+  .navigation ul li.actived a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -100%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 3rem 3rem 0 1rem var(--hover);
+    background: transparent;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .navigation.active ul li.actived a::before {
+    top: -99%;
+    right: -40%;
+    box-shadow: 3rem 3rem 0 1rem var(--hover);
+  }
+  .navigation ul li.actived a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -100%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 3rem -3rem 0 1rem var(--hover);
+    background: transparent;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .navigation.active ul li.actived a::after {
+    bottom: -99%;
+    right: -40%;
+    box-shadow: 3.7rem -3rem 0 1rem var(--hover);
+  }
+
   .navigation ul li:hover a::before {
     content: "";
     position: absolute;
@@ -157,6 +197,7 @@ input.form-control{
     pointer-events: none;
     overflow: hidden;
   }
+  
   .navigation.active ul li:hover a::before {
     top: -99%;
     right: -40%;
@@ -175,7 +216,8 @@ input.form-control{
     pointer-events: none;
     overflow: hidden;
   }
-  .navigation.navigation.active ul li:hover a::after {
+  
+  .navigation.active ul li:hover a::after {
     bottom: -99%;
     right: -40%;
     box-shadow: 3.7rem -3rem 0 1rem var(--hover);

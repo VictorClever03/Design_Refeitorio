@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saler</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
                     </a>
                     <span class="line"></span>
                 </li>
-                <li>
+                <li class="actived">
                     <a href="index.html">
                         <span class="icon">
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
@@ -223,229 +224,204 @@
 
         </div>
         <div class="content">
+            <!-- Botao vender para chamar o mmodal -->
+            <button type="submit" class="btn btn-primary m-3" id="vendaButton" data-bs-toggle="modal"
+                data-bs-target="#modalId"><i class="bi-cart text-white" style="font-size: 1.6rem;"></i> Vender</button>
             <div class="menu">
                 <h1>Refeições</h1>
-                <div class="cards">
-                    <div class="card" style="background: #894BA9;">
-                        <a href="#">
-                            <span class="icone">
-                                <svg 
-                                width="26" height="25" viewBox="0 0 26 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.6997 23.4256L23.0754 13.1996C25.3788 10.6747 25.7145 6.54645 23.5384 3.90789C22.9926 3.24297 22.3283 2.70638 21.586 2.33093C20.8437 1.95547 20.0391 1.74903 19.2211 1.72422C18.4032 1.6994 17.5893 1.85674 16.829 2.18661C16.0687 2.51648 15.3781 3.01196 14.7993 3.64278L13.0399 5.57435L11.5236 3.90789C9.2086 1.39558 5.4236 1.02947 3.00443 3.40291C2.39479 3.99814 1.90282 4.7227 1.55859 5.53231C1.21435 6.34192 1.02508 7.21958 1.00233 8.11167C0.979577 9.00376 1.12383 9.89154 1.42627 10.7208C1.72872 11.55 2.183 12.3033 2.76136 12.9345L12.3801 23.4256C12.5557 23.6153 12.7928 23.7217 13.0399 23.7217C13.287 23.7217 13.5241 23.6153 13.6997 23.4256Z"
-                                        stroke="#E1E1E6" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            <span class="title">
-                                Breakfast
-                            </span>
-                            <span class="detail">13 itens</span>
-                        </a>
+                <div class="cards mb-5">
+                    <div class="card">
+                        <img src="../image 3.png" alt="" width="100" height="100">
+                        <h3 class="title">Mofete</h3>
+                        <span class="price">150.00Kz</span>
+                        <form action="#" method="post">
+                            <button type="submit" class="btn btn-primary">Add+</button>
+                        </form>
                     </div>
-                    <div class="card" style="background: #DB2379;">
-                        <a href="#">
-                            <span class="icone">
-                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.6997 23.4256L23.0754 13.1996C25.3788 10.6747 25.7145 6.54645 23.5384 3.90789C22.9926 3.24297 22.3283 2.70638 21.586 2.33093C20.8437 1.95547 20.0391 1.74903 19.2211 1.72422C18.4032 1.6994 17.5893 1.85674 16.829 2.18661C16.0687 2.51648 15.3781 3.01196 14.7993 3.64278L13.0399 5.57435L11.5236 3.90789C9.2086 1.39558 5.4236 1.02947 3.00443 3.40291C2.39479 3.99814 1.90282 4.7227 1.55859 5.53231C1.21435 6.34192 1.02508 7.21958 1.00233 8.11167C0.979577 9.00376 1.12383 9.89154 1.42627 10.7208C1.72872 11.55 2.183 12.3033 2.76136 12.9345L12.3801 23.4256C12.5557 23.6153 12.7928 23.7217 13.0399 23.7217C13.287 23.7217 13.5241 23.6153 13.6997 23.4256Z"
-                                        stroke="#E1E1E6" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            <span class="title">
-                                Breakfast
-                            </span>
-                            <span class="detail">13 itens</span>
-                        </a>
+                    <div class="card">
+                        <img src="../image 3.png" alt="" width="100" height="100">
+                        <h3 class="title">Mofete</h6>
+                            <span class="price">150.00Kz</span>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-primary">Add+</button>
+                            </form>
                     </div>
-                    <div class="card" style="background: #DC2430;">
-                        <a href="#">
-                            <span class="icone">
-                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.6997 23.4256L23.0754 13.1996C25.3788 10.6747 25.7145 6.54645 23.5384 3.90789C22.9926 3.24297 22.3283 2.70638 21.586 2.33093C20.8437 1.95547 20.0391 1.74903 19.2211 1.72422C18.4032 1.6994 17.5893 1.85674 16.829 2.18661C16.0687 2.51648 15.3781 3.01196 14.7993 3.64278L13.0399 5.57435L11.5236 3.90789C9.2086 1.39558 5.4236 1.02947 3.00443 3.40291C2.39479 3.99814 1.90282 4.7227 1.55859 5.53231C1.21435 6.34192 1.02508 7.21958 1.00233 8.11167C0.979577 9.00376 1.12383 9.89154 1.42627 10.7208C1.72872 11.55 2.183 12.3033 2.76136 12.9345L12.3801 23.4256C12.5557 23.6153 12.7928 23.7217 13.0399 23.7217C13.287 23.7217 13.5241 23.6153 13.6997 23.4256Z"
-                                        stroke="#E1E1E6" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            <span class="title">
-                                Breakfast
-                            </span>
-                            <span class="detail">13 itens</span>
-                        </a>
-                    </div>
-                    <div class="card" style="background: #894BA9;">
-                        <a href="#">
-                            <span class="icone">
-                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.6997 23.4256L23.0754 13.1996C25.3788 10.6747 25.7145 6.54645 23.5384 3.90789C22.9926 3.24297 22.3283 2.70638 21.586 2.33093C20.8437 1.95547 20.0391 1.74903 19.2211 1.72422C18.4032 1.6994 17.5893 1.85674 16.829 2.18661C16.0687 2.51648 15.3781 3.01196 14.7993 3.64278L13.0399 5.57435L11.5236 3.90789C9.2086 1.39558 5.4236 1.02947 3.00443 3.40291C2.39479 3.99814 1.90282 4.7227 1.55859 5.53231C1.21435 6.34192 1.02508 7.21958 1.00233 8.11167C0.979577 9.00376 1.12383 9.89154 1.42627 10.7208C1.72872 11.55 2.183 12.3033 2.76136 12.9345L12.3801 23.4256C12.5557 23.6153 12.7928 23.7217 13.0399 23.7217C13.287 23.7217 13.5241 23.6153 13.6997 23.4256Z"
-                                        stroke="#E1E1E6" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            <span class="title">
-                                Breakfast
-                            </span>
-                            <span class="detail">13 itens</span>
-                        </a>
-                    </div>
+
                 </div>
                 <h1>Produtos</h1>
                 <div class="cards">
-                    <div class="card" style="background: #894BA9;">
-                        <a href="#">
-                            <span class="icone">
-                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.6997 23.4256L23.0754 13.1996C25.3788 10.6747 25.7145 6.54645 23.5384 3.90789C22.9926 3.24297 22.3283 2.70638 21.586 2.33093C20.8437 1.95547 20.0391 1.74903 19.2211 1.72422C18.4032 1.6994 17.5893 1.85674 16.829 2.18661C16.0687 2.51648 15.3781 3.01196 14.7993 3.64278L13.0399 5.57435L11.5236 3.90789C9.2086 1.39558 5.4236 1.02947 3.00443 3.40291C2.39479 3.99814 1.90282 4.7227 1.55859 5.53231C1.21435 6.34192 1.02508 7.21958 1.00233 8.11167C0.979577 9.00376 1.12383 9.89154 1.42627 10.7208C1.72872 11.55 2.183 12.3033 2.76136 12.9345L12.3801 23.4256C12.5557 23.6153 12.7928 23.7217 13.0399 23.7217C13.287 23.7217 13.5241 23.6153 13.6997 23.4256Z"
-                                        stroke="#E1E1E6" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            <span class="title">
-                                Breakfast
-                            </span>
-                            <span class="detail">13 itens</span>
-                        </a>
+                    <div class="card">
+                        <img src="../image 3.png" alt="" width="100" height="100">
+                        <h3 class="title">Mofete</h6>
+                            <span class="price">150.00Kz</span>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-primary">Add+</button>
+                            </form>
                     </div>
-                    <div class="card" style="background: #DB2379;">
-                        <a href="#">
-                            <span class="icone">
-                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.6997 23.4256L23.0754 13.1996C25.3788 10.6747 25.7145 6.54645 23.5384 3.90789C22.9926 3.24297 22.3283 2.70638 21.586 2.33093C20.8437 1.95547 20.0391 1.74903 19.2211 1.72422C18.4032 1.6994 17.5893 1.85674 16.829 2.18661C16.0687 2.51648 15.3781 3.01196 14.7993 3.64278L13.0399 5.57435L11.5236 3.90789C9.2086 1.39558 5.4236 1.02947 3.00443 3.40291C2.39479 3.99814 1.90282 4.7227 1.55859 5.53231C1.21435 6.34192 1.02508 7.21958 1.00233 8.11167C0.979577 9.00376 1.12383 9.89154 1.42627 10.7208C1.72872 11.55 2.183 12.3033 2.76136 12.9345L12.3801 23.4256C12.5557 23.6153 12.7928 23.7217 13.0399 23.7217C13.287 23.7217 13.5241 23.6153 13.6997 23.4256Z"
-                                        stroke="#E1E1E6" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            <span class="title">
-                                Breakfast
-                            </span>
-                            <span class="detail">13 itens</span>
-                        </a>
+                    <div class="card">
+                        <img src="../image 3.png" alt="" width="100" height="100">
+                        <h3 class="title">Mofete</h6>
+                            <span class="price">150.00Kz</span>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-primary">Add+</button>
+                            </form>
                     </div>
-                    <div class="card" style="background: #DC2430;">
-                        <a href="#">
-                            <span class="icone">
-                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.6997 23.4256L23.0754 13.1996C25.3788 10.6747 25.7145 6.54645 23.5384 3.90789C22.9926 3.24297 22.3283 2.70638 21.586 2.33093C20.8437 1.95547 20.0391 1.74903 19.2211 1.72422C18.4032 1.6994 17.5893 1.85674 16.829 2.18661C16.0687 2.51648 15.3781 3.01196 14.7993 3.64278L13.0399 5.57435L11.5236 3.90789C9.2086 1.39558 5.4236 1.02947 3.00443 3.40291C2.39479 3.99814 1.90282 4.7227 1.55859 5.53231C1.21435 6.34192 1.02508 7.21958 1.00233 8.11167C0.979577 9.00376 1.12383 9.89154 1.42627 10.7208C1.72872 11.55 2.183 12.3033 2.76136 12.9345L12.3801 23.4256C12.5557 23.6153 12.7928 23.7217 13.0399 23.7217C13.287 23.7217 13.5241 23.6153 13.6997 23.4256Z"
-                                        stroke="#E1E1E6" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            <span class="title">
-                                Breakfast
-                            </span>
-                            <span class="detail">13 itens</span>
-                        </a>
+                    <div class="card">
+                        <img src="../image 3.png" alt="" width="100" height="100">
+                        <h3 class="title">Mofete</h6>
+                            <span class="price">150.00Kz</span>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-primary">Add+</button>
+                            </form>
                     </div>
-                    <div class="card" style="background: #894BA9;">
-                        <a href="#">
-                            <span class="icone">
-                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.6997 23.4256L23.0754 13.1996C25.3788 10.6747 25.7145 6.54645 23.5384 3.90789C22.9926 3.24297 22.3283 2.70638 21.586 2.33093C20.8437 1.95547 20.0391 1.74903 19.2211 1.72422C18.4032 1.6994 17.5893 1.85674 16.829 2.18661C16.0687 2.51648 15.3781 3.01196 14.7993 3.64278L13.0399 5.57435L11.5236 3.90789C9.2086 1.39558 5.4236 1.02947 3.00443 3.40291C2.39479 3.99814 1.90282 4.7227 1.55859 5.53231C1.21435 6.34192 1.02508 7.21958 1.00233 8.11167C0.979577 9.00376 1.12383 9.89154 1.42627 10.7208C1.72872 11.55 2.183 12.3033 2.76136 12.9345L12.3801 23.4256C12.5557 23.6153 12.7928 23.7217 13.0399 23.7217C13.287 23.7217 13.5241 23.6153 13.6997 23.4256Z"
-                                        stroke="#E1E1E6" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </span>
-                            <span class="title">
-                                Breakfast
-                            </span>
-                            <span class="detail">13 itens</span>
-                        </a>
+                    <div class="card">
+                        <img src="../image 3.png" alt="" width="100" height="100">
+                        <h3 class="title">Mofete</h6>
+                            <span class="price">150.00Kz</span>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-primary">Add+</button>
+                            </form>
+                    </div>
+                    <div class="card">
+                        <img src="../image 3.png" alt="" width="100" height="100">
+                        <h3 class="title">Mofete</h6>
+                            <span class="price">150.00Kz</span>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-primary">Add+</button>
+                            </form>
                     </div>
                 </div>
             </div>
-            <div class="venda">
-                <div class="search">
-                    <input class="form-control mb-3" list="datalistOptions" id="exampleDataList"
-                        placeholder="pesquise aqui">
-                    <datalist id="datalistOptions">
-                        <option value="San Francisco">
-                        <option value="New York">
-                        <option value="Seattle">
-                    </datalist>
-                    <button type="submit" class="btn btn-primary" style="width: 4rem;">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 22V12M12 12V2M12 12H22M12 12H2" stroke="white" stroke-width="3"
-                                stroke-linecap="round" />
-                        </svg>
 
-                    </button>
-                </div>
-                <div class="itens">
-                    <form action="#" method="post">
-                    <div class="item">
-                            <span class="id">x<input type="number" name="qtd" value="1" maxlength="2" size="10" max="10" min="1"></span>
-                            <span class="name"><input type="text" name="name" value="Arroz" readonly></span>
-                            <span class="price"><input type="text" name="price" value="$1009" readonly></span>
-                            <button type="submit" name="delete" class="btn btn-danger">
-                                <img src="./assets/deleteicon.svg" alt="delete" >
+        </div>
+
+
+        <!-- Modal Body -->
+        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+            role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                <div class="modal-content rounded-3" style="width: 100">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-2" id="modalTitleId">Efectuar uma venda</h5>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" method="post" id="search">
+                            <input class="form-control mb-3" list="datalistOptions" id="exampleDataList"
+                                placeholder="pesquise aqui">
+                            <datalist id="datalistOptions">
+                                <option value="San Francisco">
+                                <option value="New York">
+                                <option value="Seattle">
+                            </datalist>
+                            <button type="submit" class="btn btn-primary" style="height: 3rem;" title="adicionar">
+                                <i class="bi bi-plus text-white p-0"></i>
                             </button>
+                        </form>
+                        <!-- Table with stripped rows -->
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Qtd</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Preço</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <i class="bi bi-dash btn-subtract"></i>
+                                        <input type="text" name="qtd" class="operations" value="01" readonly>
+                                        <i class="bi bi-plus btn-plus"></i>
+                                    </th>
+                                    <td>Brandon Jacob</td>
+                                    <td>Designer</td>
+                                    <td><a href="#">
+                                            <i class="bi bi-x-circle"></i>
+                                        </a></td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <i class="bi bi-dash btn-subtract"></i>
+                                        <input type="text" name="qtd" class="operations" value="01" readonly>
+                                        <i class="bi bi-plus btn-plus"></i>
+                                    </th>
+                                    <td>Brandon Jacob</td>
+                                    <td>Designer</td>
+                                    <td><a href="#">
+                                            <i class="bi bi-x-circle"></i>
+                                        </a></td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <i class="bi bi-dash btn-subtract"></i>
+                                        <input type="text" name="qtd" class="operations" value="01" readonly>
+                                        <i class="bi bi-plus btn-plus"></i>
+                                    </th>
+                                    <td>Brandon Jacob</td>
+                                    <td>Designer</td>
+                                    <td><a href="#">
+                                            <i class="bi bi-x-circle"></i>
+                                        </a></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="payment">
+                            <div class="paymenttype">
+                                <select class="form-select text-black" aria-label="Default select example">
+                                    <option selected>Selecione a forma de pagamento</option>
+                                    <option value="1">Mão</option>
+                                    <option value="2">Tpa</option>
+                                </select>
+                            </div>
+                            <div class="clientname">
+                                <input class="form-control mb-3" list="datalistname" id="exampleDataListname"
+                                    placeholder="Nome do cliente">
+                                <datalist id="datalistname">
+                                    <option value="Aldair">
+                                    <option value="Psicopata em pessoa">
+                                    <option value="Antonio">
+                                </datalist>
+                            </div>
+                            <span class="totalprice">
+                                <h1>Total:</h1>
+                                <h1>KZ 18.000.00</h1>
+                            </span>
+
+                        </div>
                     </div>
-                    <div class="item">
-                            <span class="id">x<input type="number" name="qtd" value="1" maxlength="2" size="10" max="10" min="1"></span>
-                            <span class="name"><input type="text" name="name" value="Arroz" readonly></span>
-                            <span class="price"><input type="text" name="price" value="$1009" readonly></span>
-                            <button type="submit" name="delete" class="btn btn-danger">
-                                <img src="./assets/deleteicon.svg" alt="delete" >
-                            </button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary w-25 fs-4 p-2" data-bs-dismiss="modal"><i
+                                class="bi bi-x ttext white"></i> Abortar</button>
+                        <button type="button" class="btn btn-primary w-25"><i class="bi bi-check text-white"></i>
+                            Vender</button>
                     </div>
-                    <div class="item">
-                            <span class="id">x<input type="number" name="qtd" value="1" maxlength="2" size="10" max="10" min="1"></span>
-                            <span class="name"><input type="text" name="name" value="Arroz" readonly></span>
-                            <span class="price"><input type="text" name="price" value="$1009" readonly></span>
-                            <button type="submit" name="delete" class="btn btn-danger">
-                                <img src="./assets/deleteicon.svg" alt="delete" >
-                            </button>
-                    </div>
-                </div>
-                <div class="payment">
-                    <div class="paymenttype">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Selecione a forma de pagamento</option>
-                            <option value="1">Mão</option>
-                            <option value="2">Tpa</option>
-                        </select>
-                    </div>
-                    <div class="clientname">
-                        <input class="form-control mb-3" list="datalistname" id="exampleDataListname"
-                            placeholder="Nome do cliente">
-                        <datalist id="datalistname">
-                            <option value="Aldair">
-                            <option value="Psicopata em pessoa">
-                            <option value="Antonio">
-                        </datalist>
-                    </div>
-                    <span class="totalprice">
-                        <h4>Total:</h4>
-                        <h5>KZ 18.000.00</h5>
-                    </span>
-                    <button type="submit" name="vender" class="btn btn-primary">Vender</button>
-                    </form>
                 </div>
             </div>
         </div>
+
+
+        <!-- Optional: Place to the bottom of scripts -->
+        <script>
+            const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+
+        </script>
     </main>
-    <div id="preloader">
-        <!-- aqui vai surgir por intermedio do js -->
-    </div>
+
     <script src="./main.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" async defer></script>
-    <script src="../node_modules/@popperjs/core@2.11.6/dist/umd/popper.min.js" async defer></script>
-    <script src="./assets/echarts.min.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js" async defer></script>
+    <!-- for good tables, the order is that -->
+    <script src="../admin/assets/tinymce.min.js"></script>
+    <script src="../admin/assets/datatables.js"></script>
+    <script src="../admin/assets/main.js"></script>
     <script>
         // toggle button
         let toggle = document.querySelector('.toggler .btn')
@@ -455,6 +431,42 @@
             navigation.classList.toggle('active')
             main.classList.toggle('active')
         }
+        // operacoes adicionar e subtrair
+    window.addEventListener("load", () => {
+      let plus = document.querySelectorAll(".btn-plus");
+      let subt = document.querySelectorAll(".btn-subtract");
+
+
+      let a = 1;
+      plus.forEach((plu) => {
+
+        plu.addEventListener("click", () => {
+          a = plu.previousElementSibling.value
+          if (a < 10) {
+            a++;
+            a = (a < 10) ? "0" + a : a;
+
+            let input = plu.previousElementSibling
+            input.value = a
+            a = input.value
+          }
+        });
+      });
+      subt.forEach((sub) => {
+        sub.addEventListener("click", () => {
+          a = sub.nextElementSibling.value
+          //   console.log(a);
+
+          if (a > 1) {
+            a--;
+            a = (a < 10) ? "0" + a : a;
+            let input = sub.nextElementSibling
+            input.value = a
+          }
+        });
+      });
+
+    });
     </script>
 </body>
 
