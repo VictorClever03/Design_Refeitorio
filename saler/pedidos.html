@@ -8,8 +8,10 @@
     <title>Saler</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style5.css">
     <link rel="stylesheet" href="../admin/assets/datatables.css">
+    <link rel="stylesheet" href="./font/bootstrap-icons.css">
+
 
 </head>
 
@@ -224,159 +226,176 @@
             </div>
 
         </div>
-        
+
         <section class="section">
             <h1>Pedidos</h1>
-            
+
             <a href="historico.html" class="btn btn-primary" style="
             padding: .7rem;
             font-size: 1.5rem; margin-bottom:1rem">Histórico</a>
-            
             <div class="row">
-              <div class="col-lg-12">
-      
-                <div class="card">
-                  <div class="card-body">
-                                     
-      
-                    <!-- Table with stripped rows -->
-                    <table class="table datatable table-striped">
-                      <thead>
-                        <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">Name</th>
-                          <th scope="col">Position</th>
-                          <th scope="col">Age</th>
-                          <th scope="col">Start Date</th>
-                        </tr>
-                      </thead>
-                      <tfoot>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+                    <div class=" card w-100 rounded-4 bg-transparent">
 
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Brandon Jacob</td>
-                          <td>Designer</td>
-                          <td>28</td>
-                          <td>
-                            <div class="d-flex align-items-center ">
-                              
-                                <form action="#" method="post">
-                                    <button class="btn " style="background: #065E7C;color: #fff;">notificar</button>
-                                    <button class="btn btn-success " data-bs-toggle="modal" data-bs-target="#modalId" type="button">atender</button>
-                                </form>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Bridie Kessler</td>
-                          <td>Developer</td>
-                          <td>35</td>
-                          <td>
-                            <div class="d-flex align-items-center ">
-                                
-                                <form action="#" method="post">
-                                    <button class="btn " style="background: #065E7C;color: #fff;">notificar</button>
-                                    <button class="btn btn-success ">atender</button>
-                                </form>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Ashleigh Langosh</td>
-                          <td>Finance</td>
-                          <td>45</td>
-                          <td>
-                            <div class="d-flex align-items-center ">
-                                
-                                <form action="#" method="post">
-                                    <button class="btn " style="background: #065E7C;color: #fff;">notificar</button>
-                                    <button class="btn btn-success">atender</button>
-                                </form>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">4</th>
-                          <td>Angus Grady</td>
-                          <td>HR</td>
-                          <td>34</td>
-                          <td>
-                            <div class="d-flex align-items-center ">
-                              
-                                <form action="#" method="post">
-                                    <button class="btn " style="background: #065E7C;color: #fff;">notificar</button>
-                                    <button class="btn btn-success ">atender</button>
-                                </form>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">5</th>
-                          <td>Raheem Lehner</td>
-                          <td>Dynamic Division Officer</td>
-                          <td>47</td>
-                          <td>
-                            <div class="d-flex align-items-center ">
-                                
-                                <form action="#" method="post">
-                                    <button class="btn " style="background: #065E7C;color: #fff;">notificar</button>
-                                    <button class="btn btn-success ">atender</button>
-                                </form>
-                            </div>
-                          </td>
-                        </tr>
-                        
-                      </tbody>
-                    </table>
-                    <!-- End Table with stripped rows -->
-      
-                  </div>
-                </div>
-      
-              </div>
-            </div>
-          </section>
+                        <div class="card-body rounded-4">
+                            <div class="card-title d-flex justify-content-between align-content-center mb-0 pb-1">
+                                <div class="cabecalho">
+                                    <figure>
+                                        <span class="img">
+                                            <img src="./assets/user.png" width="40" alt="">
+                                        </span>
+                                        <h4 class="username fs-3">
+                                            oii
+                                        </h4>
+                                    </figure>
+                                    <span class="time">
+                                        há 2 minutos
+                                    </span>
+                                </div>
 
-          <!-- Modal Body -->
-            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-            <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered " role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalTitleId">Efectuar venda feito a pedido</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="dropdown">
+                                    <span role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-three-dots"></i>
+                                    </span>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-bell"></i>
+                                                Notificar</a></li>
+                                        <li>
+                                            <form action="#" method="post">
+                                                <button class="dropdown-item" type="submit" name="btn" value=submit><i
+                                                        class="bi bi-check2-circle"></i>
+                                                    Terminado</button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <span class="fs-4">
+                                <strong>
+                                    Pedidos
+                                </strong>
+                            </span>
+                            <p class="card-text pedidos">
+                               2x nkckn <br>
+                               
+                               2x nkckn 
+                               <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">mais</a><br>
+                               Total: 0.00kz <br>
+                            </p>
+
                         </div>
-                        <div class="modal-body">
-                           <form action="">
-                            <input type="text" name="" id="">
-                           </form>
-                           
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                                        
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable      ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+                    <div class=" card w-100 rounded-4 bg-transparent">
+
+                        <div class="card-body rounded-4">
+                            <div class="card-title d-flex justify-content-between align-content-center mb-0 pb-1">
+                                <div class="cabecalho">
+                                    <figure>
+                                        <span class="img">
+                                            <img src="./assets/user.png" width="40" alt="">
+                                        </span>
+                                        <h4 class="username fs-3">
+                                            oii
+                                        </h4>
+                                    </figure>
+                                    <span class="time">
+                                        há 2 minutos
+                                    </span>
+                                </div>
+
+                                <div class="dropdown">
+                                    <span role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-three-dots"></i>
+                                    </span>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-bell"></i>
+                                                Notificar</a></li>
+                                        <li>
+                                            <form action="#" method="post">
+                                                <button class="dropdown-item" type="submit" name="btn" value=submit><i
+                                                        class="bi bi-check2-circle"></i>
+                                                    Terminado</button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <span class="fs-4">
+                                <strong>
+                                    Pedidos
+                                </strong>
+                            </span>
+                            <p class="card-text pedidos">
+                               2x nkckn <br>
+                               2x nkckn <br>
+                               2x nkckn <br>
+                               2x nkckn 
+                               <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">mais</a><br>
+                               Total: 0.00kz <br>
+                            </p>
+
+                        </div>
+                    </div>
+                                        
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable      ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            
-            
-            <!-- Optional: Place to the bottom of scripts -->
-            <script>
-                const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-            
-            </script>
+
+        </section>
+
+
 
         <a id="backToTopButton" class="" href="#">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="20" r="20" fill="#065E7C" />
-              <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="20" cy="20" r="20" fill="#065E7C" />
+                <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
             </svg>
-        
+
         </a>
     </main>
     <script src="./main.js"></script>
@@ -385,8 +404,8 @@
     <script src="./assets/echarts.min.js"></script>
     <!-- for good tables, the order is that -->
     <script src="../admin/assets/tinymce.min.js"></script>
-   <script src="../admin/assets/datatables.js"></script>
-   <script src="../admin/assets/main.js"></script>
+    <script src="../admin/assets/datatables.js"></script>
+    <script src="../admin/assets/main.js"></script>
     <script>
         // toggle button
         let toggle = document.querySelector('.toggler .btn')
@@ -396,10 +415,10 @@
             navigation.classList.toggle('active')
             main.classList.toggle('active')
         }
-         // backToTopButton
-    window.addEventListener("scroll", function () {
-      backToTopButton.classList.toggle('show',scrollY>500);
-    })
+        // backToTopButton
+        window.addEventListener("scroll", function () {
+            backToTopButton.classList.toggle('show', scrollY > 500);
+        })
     </script>
 </body>
 

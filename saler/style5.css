@@ -1,0 +1,41 @@
+section.section{
+    padding-top: 10rem;
+    margin-inline: 2.5rem;
+}
+section.section  h1{
+    padding-bottom: 3rem;
+}
+.card{
+  border: none;
+}
+div.card-body{
+    background: var(--primary-color);
+    outline: none;
+    border: .1rem solid #ffffff18;
+}
+.cabecalho figure{
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    margin: 0;
+}
+figure .img{
+    position: relative;
+    min-width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+figure .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cabecalho .time{
+    font-size: small;
+    color: grey;
+}
